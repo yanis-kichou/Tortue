@@ -1,0 +1,12 @@
+image: pobj-tme6
+
+stages:
+- test
+
+test_job:
+  stage: test
+  script: /home/pobj/notation.sh
+  artifacts:
+    when: always
+    paths:
+    - index.html
